@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Galina Pustovalova](https://up.htmlacademy.ru/htmlcss/23/user/479579).
-* Наставник: `Ксения Торкова`.
+* Наставник: [Ксения Торкова](https://up.htmlacademy.ru/htmlcss/23/user/23249).
 
 ---
 
