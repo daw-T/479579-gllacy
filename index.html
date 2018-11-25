@@ -17,7 +17,28 @@
 					</ul>
 
 					<ul class="user-navigation">
-						<li class="login-link">Вход</li>
+						<li>
+					<section class="modal modal-login">	
+						<h2>Вход в личный кабинет</h2>
+						<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+							<p>
+								<label class="visually-hidden" for="user-mail">Электронная почта</label>
+								<input class="login-user" id="user-mail" type="text" name="mail" placeholder="Электронная почта">
+							</p>
+							<p>
+								<label class="visually-hidden" for="user-password">Пароль</label>
+								<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+							</p>
+							<button class="button" type="submit">Войти</button>
+							<p>
+								<a href="#" aria-label="Восстановить пароль">Забыли пароль?</a>
+								<a href="#">Новая регистрация</a>
+							</p>
+						</form>
+						<button class="modal-close" type="button" aria-label="Кнопка поиска">Закрыть</button>
+					</section>
+						
+						</li>
 					</ul>
 				</nav>				
 					
@@ -30,14 +51,15 @@
 					</form>
 				</section>
 				
-				<div class="basket">
+				<section class="basket">
 					<h2 class="visuality-hidden">Корзина покупок</h2>
-						<div>
-							<a href="#">Корзина покупок</a>
-							<!-- здесь будет форма-->
-						</div>
-				</div>		
-				<p class="shop-mode-contacts">
+					<button class="button" type="submit" aria-label="Переход в корзину с покупками"><img src="img/basket.svg" width="20" alt="Корзина с покупками"></button>
+					<div>
+						 <!-- форма корзины покупок-->
+					</div>
+				</section>
+				
+				<p class="shop-mode-contacts" aria-label="режим работы магазина, контактный телефон">
 					<span class="shop-mode">с 10 до 20, ежедневно</span>
 					<span class="phone"><a href="tel:88124502525">8 812 450-25 25</a></span>
 				</p>
