@@ -11,7 +11,7 @@
 					<img src="img/logo.svg" width="154" alt="Логотип магазина мороженого Gllacy Shop">
 				</a>
 			</div>	
-			<nav class="main-navigation">
+			<nav class="main-navigation" aria-label="Главное меню">
 				<ul class="site-navigation">
 					<li><a href="catalog.html">Каталог</a></li>
 					<li><a href="payment.html">Доставка и оплата</a></li>
@@ -23,11 +23,15 @@
 				</ul>
 			</nav>				
 				
-			<div class="search">
-			<h2 class="visuality-hidden">Форма поиска</h2>
-				<a href="#"><img src="img/loupe.svg" width="17" alt="Поиск по сайту">Поиск по сайту</a>
-				<!-- здесь будет форма-->
-			</div>							
+			<section class="search">          <!-- форма поиска по сайту-->
+				<h2 class="visuality-hidden">Форма поиска</h2>
+				<button class="button" type="submit" aria-label="Кнопка поиска"><img src="img/loupe.svg" width="17" alt="Поиск по сайту"></button>
+				<form class="search-site" action="https://echo.htmlacademy.ru" method="get">
+					<label class="visually-hidden" for="search">Поиск по сайту</label>
+					<input id="search" type="text" name="search" value="" placeholder="Что ищем?">
+				</form>
+			</section>	
+			
 			<div class="basket">
 			<h2 class="visuality-hidden">Корзина покупок</h2>
 				<div>
@@ -223,46 +227,59 @@
 						</section>
 					</li>					
 			   </ul>
-				
+			</section>
+		</main>			   
+		<nav aria-label="Навигация по страницам">
 				<ul class="pagination-list">
-				  <li class="pagination-item-curren"><a>1</a>
-				  <li class="pagination-item"><a href="#">2</a>
-				  <li class="pagination-item"><a href="#">3</a>
-				  <li class="pagination-item"><a href="#">4</a>
-				  <li class="pagination-item"><a href="#">5</a>
-				  <li class="pagination-next-item"><a href="#">Вперед</a> 				  
+				  <li class="pagination-item-curren"><a aria-label="Страница 1">1</a>
+				  <li class="pagination-item"><a href="#" aria-label="Страница 2">2</a>
+				  <li class="pagination-item"><a href="#" aria-label="Страница 3">3</a>
+				  <li class="pagination-item"><a href="#" aria-label="Страница 4">4</a>
+				  <li class="pagination-item"><a href="#" aria-label="Страница 5">5</a>
+				  <li class="pagination-next-item"><a href="#" aria-label="Следующая страница">Вперед</a> 				  
 				</ul>
-			  </section>
-			</main>
-			<footer class="main-footer">
-				<hr class="footer-hr">
-				<div class="footer-social">
-					<ul>
-					  <li><a class="social-button social-button-twitter" href="#">Твитер</a></li>
-					  <li><a class="social-button social-button-instagram" href="#">Инстаграм</a></li>
-					  <li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li> 
-					  <li><a class="social-button social-button-vk" href="#">ВКонтакте</a></li> 					  
-					</ul>
-				</div>			
+		</nav>
+		<footer class="main-footer">
+			<div class="footer-social" aria-label="Gllacy в социальных сетях">
+				<ul>
+					<li><a class="social-button social-button-twitter" href="#" aria-label="Gllacy в Твитере">Твитер</a></li>
+					<li><a class="social-button social-button-instagram" href="#" aria-label="Gllacy в Инстаграме">Инстаграм</a></li>
+					<li><a class="social-button social-button-facebook" href="#" aria-label="Gllacy в Фейсбуке">Фейсбук</a></li> 
+					<li><a class="social-button social-button-vk" href="#" aria-label="Gllacy в Контакте">ВКонтакте</a></li> 					  
+				</ul>
+			</div>			
 			
-			    <div class="footer-about">
-					<ul>
-					  <li><a class="footer-menu footer-menu-favourite" href="#">Для поставщиков</a></li>
-					  <li><a class="social-button" href="#">О производстве</a></li>
-					  <li><a class="social-button" href="#">Наши документы</a></li> 
-					  <li><a class="social-button" href="#">Экологические стандарты</a></li>					  
-					</ul>			  
-				</div>			  
-			<div class="footer-copyright">
+			<div class="footer-about" aria-label="Футер-меню">
+				<ul>
+					<li><a class="footer-menu footer-menu-favourite" href="#">Для поставщиков</a></li>
+					<li><a class="social-button" href="#">О производстве</a></li>
+					<li><a class="social-button" href="#">Наши документы</a></li> 
+					<li><a class="social-button" href="#">Экологические стандарты</a></li>					  
+				</ul>			  
+			</div>			  
+			<div class="footer-copyright" aria-label="Ссылки на производителя данного сайта">
 				<a href="https://up.htmlacademy.ru/htmlcss/23/specification#gllacy"><img src="img/logo-htmlacademy.svg" width="108" alt="Логотип HTML Academy"></a>
 				<p><a href="https://up.htmlacademy.ru/htmlcss/23/specification#gllacy">Сделано в HTML Academy &#169; 2017</a></p>
 			</div>
-			</footer>
-			<section class="modal modal-login">	
-				<h2>Личный кабинет</h2>
-				<p>Введите свой логин и пароль</p>
-				<!-- здесь будет форма-->
-				<span class="modal-close">x</span>
-			</section>				
-  </body>
+		</footer>
+		<section class="modal modal-login">	
+			<h2>Вход в личный кабинет</h2>
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+				<p>
+					<label class="visually-hidden" for="user-mail">Электронная почта</label>
+					<input class="login-user" id="user-mail" type="text" name="mail" placeholder="Электронная почта">
+				</p>
+				<p>
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+				</p>
+				<button class="button" type="submit">Войти</button>
+				<p>
+					<a href="#" aria-label="Восстановить пароль">Забыли пароль?</a>
+					<a href="#">Новая регистрация</a>
+				</p>
+			</form>
+			<button class="modal-close" type="button" aria-label="Кнопка поиска">Закрыть</button>
+		</section>		
+    </body>
 </html>
