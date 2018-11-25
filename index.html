@@ -21,11 +21,15 @@
 					</ul>
 				</nav>				
 					
-				<div class="search">
+				<section class="search">
 					<h2 class="visuality-hidden">Форма поиска</h2>
-					<a href="#"><img src="img/loupe.svg" width="17" alt="Поиск по сайту">Поиск по сайту</a>
-					<!-- здесь будет форма-->
-				</div>							
+					<button class="button" type="submit" aria-label="Кнопка поиска"><img src="img/loupe.svg" width="17" alt="Поиск по сайту"></button>
+					<form class="search-site" action="https://echo.htmlacademy.ru" method="get">
+						<label class="visually-hidden" for="search">Поиск по сайту</label>
+						<input id="search" type="text" name="search" value="" placeholder="Что ищем?">
+					</form>
+				</section>
+				
 				<div class="basket">
 					<h2 class="visuality-hidden">Корзина покупок</h2>
 						<div>
