@@ -36,7 +36,6 @@
 			<h2 class="visually-hidden">Корзина покупок</h2>
 				<div>
 					<a href="#">Корзина покупок</a>
-					<!-- здесь будет форма-->
 				</div>
 			</div>
 			<p class="shop-mode-contacts" aria-label="режим работы магазина, контактный телефон">
@@ -294,6 +293,32 @@
 			</form>
 			<button class="modal-close" type="button" aria-label="Кнопка поиска">Закрыть</button>
 		</section>
+		
+		<section class="modal modal-basket">
+			<h2 class="visually-hidden">Корзина с товарами</h2>
+			<form class="" action="https://echo.htmlacademy.ru" method="post">
+				<table class="table-basket">
+					<tr>
+						<td><button class="item-del" type="button" aria-label="Удаление товара из корзины"></button></td>
+						<td><img src="img/product-13.jpg" alt=""></td>
+						<td>Пломбир с апельсиновым джемом</td>
+						<td>1,5кг х 200 руб.</td>
+						<td>300 руб.</td>				
+					</tr>
+					<tr>
+						<td><button class="item-del" type="button" aria-label="Удаление товара из корзины"></button></td>
+						<td><img src="img/product-14.jpg" alt=""></td>
+						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+						<td>1,5кг х 300 руб.</td>
+						<td>450 руб.</td>				
+					</tr>			
+				</table>
+				<hr class="user-basket-hr">
+				<p class="user-basket-sum">Итого: 750 руб.</p>
+				<button class="button" type="submit">Оформить заказ</button>
+			</form>
+			<button class="modal-close" type="button" aria-label="Выход из формы">Закрыть</button>
+		</section>	
 		
     </body>
 </html>
