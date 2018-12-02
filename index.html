@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Gllacy Shop</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">	
 	</head>
 		<body>
 			<header class="main-header">
@@ -41,7 +44,7 @@
 			<div class="basket">
 			<h2 class="visually-hidden">Корзина покупок</h2>
 				<div>
-					<a href="#">Корзина покупок</a>
+					<a href="#">Пусто</a>
 				</div>
 			</div>				
 				
@@ -111,7 +114,7 @@
 								<img src="img/product-3.jpg" width="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 							</p>
 							<p class="catalog-item-price">
-								<b>355 р</b><span class="catalog-item-price-per-kg">/кг</span>
+								<b>355 р</b><span class="catalog-per-kg">/кг</span>
 							</p>
 							<a class="button" href="#">Быстрый просмотр</a>
 						</section>
@@ -126,7 +129,7 @@
 								<img src="img/product-4.jpg" width="267" alt="Сливочное крем-брюле с карамельной подливкой">
 							</p>
 							<p class="catalog-item-price">
-								<b>415 р</b><span class="catalog-item-price-per-kg">/кг</span>
+								<b>415 р</b><span class="catalog-per-kg">/кг</span>
 							</p>
 							<a class="button" href="#">Быстрый просмотр</a>
 						</section>
@@ -152,13 +155,13 @@
 			</section>
 
 			<div class="main-banner">
-				<section class="new">		
+				<section class="main-new">		
 					<h2 class="main-banner-news">Новое в нашем блоге</h2>
 					<a href="#"><h3 class="main-banner-new">
 						10 способов сервировки фруктовых щербетов к столу</h3>
 					</a>
 				</section>
-				<section class="main-banner-subscription">		
+				<section class="main-subscription">		
 					<h2 class="visually-hidden">Подпишитесь на сладкую рассылку!</h2>
 					<p>Подпишитесь на нашу вкусную рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
 					Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
@@ -197,12 +200,12 @@
 				</ul>
 			</div>			
 			
-			<div class="footer-about" aria-label="Футер-меню">
+			<div class="footer-menu" aria-label="меню в футере">
 				<ul>
-					<li><a class="footer-menu footer-menu-favourite" href="#">Для поставщиков</a></li>
-					<li><a class="social-button" href="#">О производстве</a></li>
-					<li><a class="social-button" href="#">Наши документы</a></li> 
-					<li><a class="social-button" href="#">Экологические стандарты</a></li>					  
+					<li><a class="footer-menu-favourite" href="#">Для поставщиков</a></li>
+					<li><a href="#">О производстве</a></li>
+					<li><a href="#">Наши документы</a></li> 
+					<li><a href="#">Экологические стандарты</a></li>					  
 				</ul>			  
 			</div>			  
 			<div class="footer-copyright" aria-label="Ссылки на производителя данного сайта">
@@ -216,11 +219,11 @@
 			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
 					<label class="visually-hidden" for="user-mail">Электронная почта</label>
-					<input class="login-user" id="user-mail" type="text" name="mail" placeholder="Электронная почта">
+					<input id="user-mail" type="text" name="mail" placeholder="Электронная почта">
 				</p>
 				<p>
 					<label class="visually-hidden" for="user-password">Пароль</label>
-					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+					<input id="user-password" type="password" name="password" placeholder="Пароль">
 				</p>
 				<button class="button" type="submit">Войти</button>
 				<p>
@@ -236,15 +239,15 @@
 			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
 					<label class="visually-hidden" for="user-name">Имя пользователя</label>
-					<input class="feedback" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+					<input id="user-name" type="text" name="name" placeholder="Как вас зовут?">
 				</p>
 				<p>
 					<label class="visually-hidden" for="mail-feedback">Электронная почта для ответа</label>
-					<input class="feedback" id="mail-feedback" type="text" name="mail-feedback" placeholder="Ваша почта для ответа?">
+					<input id="mail-feedback" type="text" name="mail-feedback" placeholder="Ваша почта для ответа">
 				</p>
 				<p>
 					<label class="visually-hidden" for="user-question">Вопрос от пользователя</label>
-					<input class="feedback-question" id="user-question" type="text" name="question" placeholder="Напишите что-нибудь...">
+					<input id="user-question" type="text" name="question" placeholder="Напишите что-нибудь...">
 				</p>				
 				<button class="button" type="submit">Отправить</button>
 			</form>
@@ -257,21 +260,21 @@
 				<table class="table-basket">
 					<tr>
 						<td><button class="item-del" type="button" aria-label="Удаление товара из корзины"></button></td>
-						<td><img src="img/product-13.jpg" alt=""></td>
+						<td><img src="img/product-13.jpg" width="33" alt="Пломбир с апельсиновым джемом"></td>
 						<td>Пломбир с апельсиновым джемом</td>
-						<td>1,5кг х 200 руб.</td>
+						<td>1,5кг х <span>200 руб.</span></td>
 						<td>300 руб.</td>				
 					</tr>
 					<tr>
 						<td><button class="item-del" type="button" aria-label="Удаление товара из корзины"></button></td>
-						<td><img src="img/product-14.jpg" alt=""></td>
+						<td><img src="img/product-14.jpg" width="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-						<td>1,5кг х 300 руб.</td>
+						<td>1,5кг х <span>300 руб.</span></td>
 						<td>450 руб.</td>				
 					</tr>			
 				</table>
 				<hr class="user-basket-hr">
-				<p class="user-basket-sum">Итого: 750 руб.</p>
+				<p class="user-basket-sum">Итого: <span>750 руб.</span></p>
 				<button class="button" type="submit">Оформить заказ</button>
 			</form>
 			<button class="modal-close" type="button" aria-label="Выход из формы">Закрыть</button>

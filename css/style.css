@@ -1,0 +1,356 @@
+body {
+	margin: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #fff;
+	background-color: #849d8f;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #849d8f;
+}
+
+.site-navigation,
+.user-navigation,
+.submenu-navigation {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #fff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: #fff;
+	color: #323232;
+}
+
+.submenu-navigation a {
+	font-size: 14px;
+	line-height: 16px;	
+	font-weight: normal;
+	background-color: #fff;
+	color: #323232;
+}
+
+.submenu-navigation a:hover,
+.submenu-navigation a:focus {
+	font-weight: bold;
+}
+
+.shop-mode-contacts {
+	font-weight: bold;
+}
+
+.shop-mode {
+	font-size: 14px;
+	line-height: 16px;	
+	font-weight: bold;
+}
+
+.phone a {
+	font-size: 22px;
+	line-height: 24px;
+	color: #fff;	
+}
+
+.shop-mode {
+	font-size: 14px;
+	line-height: 16px;	
+	font-weight: bold;
+}
+
+.main-banner {
+	font-weight: bold;
+}
+
+.main-banner-h2 {
+	font-size: 35px;
+	line-height: 41px;	
+}
+
+.main-banner p {
+	font-size: 18px;
+	line-height: 22px;	
+}
+
+a.button-main-banner {
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+a .catalog-item-name {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.catalog-item-price b {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;	
+}
+
+.catalog-item-price b {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: bold;
+	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-per-kg {
+	font-size: 30px;
+	line-height: 45px;
+	font-weight: bold;
+	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-item-price span {
+	font-size: 33px;
+	line-height: 35px;
+	font-weight: bold;	
+}
+
+.main-info {
+	background-color: #e8dec3;
+	color: #323232;	
+}
+
+.main-info h2 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;	
+}
+
+.main-new, 
+.main-subscription {
+	background-color: #fff;
+	color: #323232;		
+}
+
+.main-new h2 {
+	font-weight: 500;	
+}
+
+a .main-banner-new {
+	font-size: 24px;
+	line-height: 33px;
+	font-weight: bold;
+	text-decoration: underline;
+	background-color: #fff;
+	color: #323232;	
+}
+
+.main-subscription p {
+	color: #5a5a5a;		
+}
+
+.main-contacts {
+	font-size: 14px;
+	line-height: 20px;
+	color: #323232;	
+}
+
+.main-address {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;	
+}
+
+.main-phone {
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: bold;	
+}
+
+.main-contacts a {
+	color: #323232;
+}	
+
+
+.footer-menu ul,
+.footer-social ul {
+	list-style: none;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.footer-menu a,
+.footer-social a {
+	color: #fff;
+}
+
+.footer-copyright a {
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;		
+}
+
+.button,
+a.button {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
+	background-image: linear-gradient(to top, #e74a35, #f26843);
+	color: #fff;
+}
+
+.user-navigation a {
+	font-size: 14px;
+	line-height: 16px;
+	color: #323232;		
+}
+
+.basket a {
+	font-size: 14px;
+	line-height: 16px;
+	color: #fff;		
+}
+
+
+
+#news-subscription {
+	font-size: 16px;
+	line-height: 24px;	
+	color: #999;
+}
+
+#search,
+#user-mail,
+#user-password,
+#user-name,
+#mail-feedback,
+#user-question {
+	font-size: 16px;
+	line-height: 24px;	
+	color: #999;
+}
+
+
+.login-form	a {
+	font-size: 13px;
+	line-height: 24px;
+	color: #323232;	
+	text-decoration: underline;
+}
+
+.modal-feedback h2 {
+	font-size: 24px;
+	line-height: 28px;	
+	color: #323232;
+}
+
+.modal-basket td {
+	font-size: 13px;
+	line-height: 16px;	
+	color: #323232;	
+}
+
+.modal-basket td span {
+	color: #999;	
+}
+
+.user-basket-sum {
+	font-size: 15px;
+	line-height: 18px;	
+	color: #323232;	
+}
+
+.breadcrumbs ul {
+	list-style: none;
+}
+
+.breadcrumbs {
+	font-size: 14px;
+	line-height: 16px;	
+	color: #fff;
+	text-decoration: underline;
+}
+
+.breadcrumbs-current {
+	text-decoration: none;
+}
+
+.page-title {
+	font-size: 35px;
+	line-height: 41px;	
+	font-weight: bold;
+}
+
+.pagination-list ul {
+	text-decoration: none;
+}
+	
+.pagination-item,
+.pagination-item-curren {
+	font-size: 16px;
+	line-height: 18px;	
+
+}
+
+.pagination-item-curren a {
+	color: #323232;	
+}
+
+.pagination-item a {
+	color: #fff;	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

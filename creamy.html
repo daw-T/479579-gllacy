@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Gllacy Shop</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -13,7 +16,15 @@
 			</div>	
 			<nav class="main-navigation" aria-label="Главное меню">
 				<ul class="site-navigation">
-					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="catalog.html">Каталог</a>
+						<ul class="submenu-navigation" aria-label="Подразделы раздела Каталог">
+								<li class="submenu-item"><a href="catalog/new-items.html">Новинки</a></li>
+								<li class="submenu-item-current"><a>Сливочное</a></li>
+								<li class="submenu-item"><a href="catalog/sherbet.html">Щербеты</a></li>
+								<li class="submenu-item"><a href="catalog/fruit-ice.html">Фруктовый лед</a></li>
+								<li class="submenu-item"><a href="catalog/melorin.html">Мелорин</a></li>
+							</ul>
+					</li>
 					<li><a href="payment.html">Доставка и оплата</a></li>
 					<li><a href="about.html">О компании</a></li>
 				</ul>
@@ -247,7 +258,7 @@
 				  <li class="pagination-item"><a href="#">3</a>
 				  <li class="pagination-item"><a href="#">4</a>
 				  <li class="pagination-item"><a href="#">5</a>
-				  <li class="pagination-next-item"><a href="#" aria-label="Следующая страница">Вперед</a> 				  
+				  <li class="pagination-next-item"><a href="#" aria-label="Следующая страница"><img src="img/icon-right-small.jpg" width="8" height="12" alt="Стрелка вправо"></a> 				  
 				</ul>
 		</nav>
 		<footer class="main-footer">
