@@ -34,7 +34,7 @@
 
 			<section class="search">          <!-- форма поиска по сайту-->
 				<h2 class="visually-hidden">Форма поиска</h2>
-				<a class="header-search" href="#">Поиск</a>
+				<a class="visually-hidden header-search" href="#">Поиск</a>
 				<form class="search-site" action="https://echo.htmlacademy.ru" method="get">
 					<label class="visually-hidden" for="search">Поиск по сайту</label>
 					<input id="search" type="text" name="search" value="" placeholder="Что ищем?">
@@ -84,7 +84,7 @@
 								<img src="img/product-1.jpg" width="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 							</p>
 							<p class="catalog-item-price">
-								<b>310 р</b><span class="catalog-item-price-per-kg">/кг</span>
+								<b>310 ₽</b><span class="price-per-kg">/кг</span>
 							</p>
 							<a class="button" href="#">Быстрый просмотр</a>
 						</section>
@@ -99,7 +99,7 @@
 								<img src="img/product-2.jpg" width="267" alt="Сливочно-кофейное с кусочками шоколада">
 							</p>
 							<p class="catalog-item-price">
-								<b>380 р</b><span class="catalog-item-price-per-kg">/кг</span>
+								<b>380 ₽</b><span class="price-per-kg">/кг</span>
 							</p>
 							<a class="button" href="#">Быстрый просмотр</a>
 						</section>
@@ -114,7 +114,7 @@
 								<img src="img/product-3.jpg" width="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 							</p>
 							<p class="catalog-item-price">
-								<b>355 р</b><span class="catalog-per-kg">/кг</span>
+								<b>355 ₽</b><span class="price-per-kg">/кг</span>
 							</p>
 							<a class="button" href="#">Быстрый просмотр</a>
 						</section>
@@ -129,7 +129,7 @@
 								<img src="img/product-4.jpg" width="267" alt="Сливочное крем-брюле с карамельной подливкой">
 							</p>
 							<p class="catalog-item-price">
-								<b>415 р</b><span class="catalog-per-kg">/кг</span>
+								<b>415 ₽</b><span class="price-per-kg">/кг</span>
 							</p>
 							<a class="button" href="#">Быстрый просмотр</a>
 						</section>
@@ -262,19 +262,19 @@
 						<td><button class="item-del" type="button" aria-label="Удаление товара из корзины"></button></td>
 						<td><img src="img/product-13.jpg" width="33" alt="Пломбир с апельсиновым джемом"></td>
 						<td>Пломбир с апельсиновым джемом</td>
-						<td>1,5кг х <span>200 руб.</span></td>
+						<td>1,5кг х <span class="table-basket-price">200 руб.</span></td>
 						<td>300 руб.</td>				
 					</tr>
 					<tr>
 						<td><button class="item-del" type="button" aria-label="Удаление товара из корзины"></button></td>
 						<td><img src="img/product-14.jpg" width="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
 						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-						<td>1,5кг х <span>300 руб.</span></td>
+						<td>1,5кг х <span class="table-basket-price">300 руб.</span></td>
 						<td>450 руб.</td>				
 					</tr>			
 				</table>
 				<hr class="user-basket-hr">
-				<p class="user-basket-sum">Итого: <span>750 руб.</span></p>
+				<p class="user-basket-total">Итого: <span class="user-basket-sum">750 руб.</span></p>
 				<button class="button" type="submit">Оформить заказ</button>
 			</form>
 			<button class="modal-close" type="button" aria-label="Выход из формы">Закрыть</button>

@@ -12,6 +12,17 @@ a {
 	text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-navigation {
 	font-size: 16px;
 	line-height: 18px;
@@ -92,6 +103,10 @@ a.button-main-banner {
 	color: #fff;
 }
 
+.catalog ul {
+	list-style: none;
+}
+
 a .catalog-item-name {
 	font-size: 16px;
 	line-height: 22px;
@@ -112,7 +127,7 @@ a .catalog-item-name {
 	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.catalog-per-kg {
+.price-per-kg {
 	font-size: 30px;
 	line-height: 45px;
 	font-weight: bold;
@@ -252,35 +267,48 @@ a.button {
 	color: #323232;
 }
 
-.modal-basket td {
+.table-basket {
+	border-collapse: collapse;
+}
+
+.table-basket td {
 	font-size: 13px;
-	line-height: 16px;	
-	color: #323232;	
+	line-height: 16px;
+	background-color: #fff;	
+	color: #323232;
 }
 
-.modal-basket td span {
-	color: #999;	
+.table-basket-price {
+	color: #999;
 }
 
+.user-basket-total,
 .user-basket-sum {
 	font-size: 15px;
-	line-height: 18px;	
-	color: #323232;	
+	line-height: 18px;
+	font-weight: bold;
+	color: #323232;
 }
 
-.breadcrumbs ul {
+ul.breadcrumbs {
 	list-style: none;
 }
 
-.breadcrumbs {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:visited,
+.breadcrumbs a:active,
+.breadcrumbs a:link  {
 	font-size: 14px;
 	line-height: 16px;	
 	color: #fff;
-	text-decoration: underline;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
 
 .breadcrumbs-current {
 	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 .page-title {
@@ -289,7 +317,8 @@ a.button {
 	font-weight: bold;
 }
 
-.pagination-list ul {
+ul.pagination-list {
+	list-style: none;
 	text-decoration: none;
 }
 	
@@ -307,6 +336,7 @@ a.button {
 .pagination-item a {
 	color: #fff;	
 }
+
 
 
 
