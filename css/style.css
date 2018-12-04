@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: "Roboto", Arial, sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: normal;
@@ -16,8 +16,6 @@ a {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: bold;
-	color: #fff;
-	background-color: #849d8f;
 }
 
 .site-navigation,
@@ -35,7 +33,7 @@ a {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-	background-color: #fff;
+	background-color: #f7f6f3;
 	color: #323232;
 }
 
@@ -226,18 +224,15 @@ a.button {
 
 
 
-#news-subscription {
+.subscription input{
 	font-size: 16px;
 	line-height: 24px;	
 	color: #999;
 }
 
-#search,
-#user-mail,
-#user-password,
-#user-name,
-#mail-feedback,
-#user-question {
+.search-site input,
+.login-form input,
+.login-form input {
 	font-size: 16px;
 	line-height: 24px;	
 	color: #999;
