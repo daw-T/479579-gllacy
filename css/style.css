@@ -130,13 +130,13 @@ outline: 1px solid rgb(169, 85, 9, 0.7); /*синий*/
 }
 
 .user-navigation {
-	width: 93px;
-	margin-left: 9px;
+	position: relative;
+
 }
 
 .basket-empty a,
 .basket-full a,
-.user-navigation a {
+.login-link {
 	display: block;
 	font-size: 14px;
 	line-height: 16px;
@@ -173,16 +173,16 @@ outline: 1px solid rgb(169, 85, 9, 0.7); /*синий*/
 }
 
 .basket-empty a::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 16px;
-  width: 21px;
-  height: 20px;
-  background-image: url("../img/basket.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 1.0;
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 16px;
+    width: 21px;
+    height: 20px;
+    background-image: url("../img/basket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1.0;
 }
 
 .basket-full a {
@@ -190,37 +190,44 @@ outline: 1px solid rgb(169, 85, 9, 0.7); /*синий*/
 	color: #323232;
 }
 
-.user-navigation a {
+.login-link {
+	width: 28px;
+	margin-left: 9px;
 	padding: 10px 20px 10px 45px;
 	position: relative;
 	background-color: rgb(255, 255, 255, 0.2);
 }
 
-.user-navigation a::before {
-  content: "";
-  position: absolute;
-  top: 9px;
-  left: 16px;
-  width: 21px;
-  height: 19px;
-  background-image: url("../img/entrance-white.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 1.0;
+.login-link::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 16px;
+    width: 21px;
+    height: 19px;
+    background-image: url("../img/entrance-white.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 1.0;
 }
 
-.user-navigation a:hover::before,
-.user-navigation a:focus::before,
-.user-navigation a:active::before {
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
 	background-image: url("../img/entrance.svg");
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.login-link:hover,
+.login-link:focus {
 	background-color: #f7f6f3;
 	color: #323232;
+}
+
+.site-navigation a:active {
+	box-shadow: inset 0px 2px 1px 0 #696969;
+	background-color: #ededed;
 }
 
 .submenu-navigation {
@@ -303,7 +310,7 @@ outline: 1px solid rgb(169, 85, 9, 0.7); /*синий*/
 
 .modal-login {
 	position: absolute;
-	bottom: -5px;
+	top: 43px;
 	right: 0px;
 	width: 277px;
 }
@@ -388,6 +395,11 @@ outline: 1px solid rgb(169, 85, 9, 0.7); /*синий*/
 outline: 1px solid rgb(169, 85, 9, 0.3); /*синий*/	
 }
 
+.catalog-item:hover {
+	background-color: rgb(255, 255, 255, 0.2);	
+	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
 .catalog-item:nth-child(4n) {
 	margin-right: 0;
 outline: 2px solid rgb(169, 85, 9, 0.3); /*синий*/	
@@ -438,12 +450,18 @@ outline: 2px solid rgb(169, 85, 9, 0.3); /*синий*/
 	left: 0;
 }
 
+.button-catalog {
+	position: absolute;
+	bottom: 22px;
+	margin: 0 auto;
+}
+
 
 .main-info {
 	display: flex;
 	flex-direction: column;
-	/* background-color: #e8dec3; */
-	/* background-image: url("../img/waffle-pattern.png");  */
+	background-color: #e8dec3;
+	background-image: url("../img/waffle-pattern.png"); 
 	color: #323232;	
 	border-radius: 15px;
 	margin-bottom: 38px;
@@ -579,7 +597,7 @@ outline: 1px solid rgb(169, 60, 92, 0.3);
 	width: 1200px;
 	height: 430px;
 	margin: 0 auto;
-	background-image: url("../img/map-with-pin1.jpg");
+	background-image: url("../img/map-with-pin.jpg");
 	margin-bottom: 18px;
 }
 
@@ -592,7 +610,7 @@ outline: 1px solid rgb(169, 60, 92, 0.3);
 	line-height: 20px;
 	color: #323232;
 	padding: 30px 26px;
-	background-color: # fff; 
+	background-color: #fff; 
 	border-radius: 15px;
 outline: 1px solid rgb(169, 60, 92, 0.3);	
 }
