@@ -16,7 +16,7 @@
 								<img src="img/logo.svg" width="154" alt="Логотип магазина мороженого Gllacy Shop">
 							</a>	
 							<ul class="site-navigation" aria-label="Разделы главного меню">
-								<li class="site-navigation-catalog"><a href="catalog.html">Каталог</a>
+								<li class="site-navigation-item site-navigation-catalog"><a href="catalog.html">Каталог</a>
 									<ul class="submenu-navigation" aria-label="Подразделы раздела Каталог">
 										<li class="submenu-item submenu-item-new"><a href="catalog/new-items.html">Новинки</a></li>
 										<li class="submenu-item"><a href="catalog/creamy.html">Сливочное</a></li>
@@ -25,8 +25,8 @@
 										<li class="submenu-item"><a href="catalog/melorin.html">Мелорин</a></li>
 									</ul>
 								</li>
-								<li><a href="payment.html">Доставка и оплата</a></li>
-								<li><a href="about.html">О компании</a></li>
+								<li class="site-navigation-item"><a href="payment.html">Доставка и оплата</a></li>
+								<li class="site-navigation-item"><a href="about.html">О компании</a></li>
 							</ul>
 						</nav>
 						
@@ -91,7 +91,7 @@
 				  <div class="wraper-1146">	
 					<h1 class="visually-hidden">Магазин вкуснейшего мороженого собственного производства Gllacy Shop</h1>		
 			
-					<div class="slider">111
+					<div class="slider">
 					</div>
 			
 					<section class="main-banner">
@@ -137,7 +137,7 @@
 									<b>380₽</b><span class="price-per-kg">/кг</span>
 								</p>
 								<img class="hit" src="img/hit.svg" width="61" alt="Хит">
-								<a class="visually-hidden <!-- временно--> button" href="#">Быстрый просмотр</a>
+								<a class="button button-catalog" href="#">Быстрый просмотр</a>
 							</li>
 							
 							<li class="catalog-item">
@@ -151,7 +151,7 @@
 									<b>355₽</b><span class="price-per-kg">/кг</span>
 								</p>
 								<img class="hit" src="img/hit.svg" width="61" alt="Хит">
-								<a class="visually-hidden <!-- временно--> button" href="#">Быстрый просмотр</a>
+								<a class="button button-catalog" href="#">Быстрый просмотр</a>
 							</li>
 
 							<li class="catalog-item">
@@ -165,7 +165,7 @@
 									<b>415₽</b><span class="price-per-kg">/кг</span>
 								</p>
 								<img class="hit" src="img/hit.svg" width="61" alt="Хит">
-								<a class="visually-hidden <!-- временно--> button" href="#">Быстрый просмотр</a>
+								<a class="button button-catalog" href="#">Быстрый просмотр</a>
 							</li>
 						</ul>
 					</section>
@@ -200,21 +200,23 @@
 								10 способов сервировки фруктовых щербетов к столу</h3>
 							</a>
 						</section>
-						<section class="main-subscription">		
-							<h2 class="visually-hidden">Подпишитесь на сладкую рассылку!</h2>
-							<p>Подпишитесь на нашу вкусную рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-							Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
-							<div class="form-subscription-wraper">
-								<form class="subscription" action="https://echo.htmlacademy.ru" method="post">
-									<label class="visually-hidden" for="news-subscription">Подписка на рассылку</label>
-									<input id="news-subscription" type="text" name="subscription" value="" placeholder="Электронная почта">
-									<button class="button button-subscription" type="submit">Отправить</button>
-								</form>
-							</div>
+						<section class="main-subscription">	
+							<div class="main-subscription-container">
+							</div>	
+								<h2 class="visually-hidden">Подпишитесь на сладкую рассылку!</h2>
+								<p>Подпишитесь на нашу вкусную рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+								Обещаем не спамить и не слать всякой ненужной ерунды. Честно=)</p>
+								<div class="form-subscription-wraper">
+									<form class="subscription" action="https://echo.htmlacademy.ru" method="post">
+										<label class="visually-hidden" for="news-subscription">Подписка на рассылку</label>
+										<input id="news-subscription" type="text" name="subscription" value="" placeholder="Электронная почта">
+										<button class="button button-subscription" type="submit">Отправить</button>
+									</form>
+								</div>
+							
 						</section>
-					</div>
 				  </div>
-			
+			</div>
 					<div class="main-map">
 						<!-- здесь будет карта-->
 						<section class="main-contacts">
@@ -232,10 +234,10 @@
 
 				<footer class="main-footer">
 					<ul class="footer-social" aria-label="Gllacy в социальных сетях">
-						<li><a class="social-button social-button-twitter" href="#" aria-label="Gllacy в Твитере"><img src="img/twitter.svg" width="39" alt="Иконка Твитера"></a></li>
-						<li><a class="social-button social-button-instagram" href="#" aria-label="Gllacy в Инстаграме"><img src="img/instagram.svg" width="39" alt="Иконка Инстаграма"></a></li>
-						<li><a class="social-button social-button-facebook" href="#" aria-label="Gllacy в Фейсбуке"><img src="img/fb.svg" width="39" alt="Иконка Фейсбука"></a></li> 
-						<li><a class="social-button social-button-vk" href="#" aria-label="Gllacy в Контакте"><img src="img/vk.svg" width="39" alt="Иконка ВКонтакте"></a></li>				
+						<li><a class="social-button social-button-twitter" href="#" aria-label="Gllacy в Твитере"><img src="img/twitter.svg" width="35" alt="Иконка Твитера"></a></li>
+						<li><a class="social-button social-button-instagram" href="#" aria-label="Gllacy в Инстаграме"><img src="img/instagram.svg" width="35" alt="Иконка Инстаграма"></a></li>
+						<li><a class="social-button social-button-facebook" href="#" aria-label="Gllacy в Фейсбуке"><img src="img/fb.svg" width="35" alt="Иконка Фейсбука"></a></li> 
+						<li><a class="social-button social-button-vk" href="#" aria-label="Gllacy в Контакте"><img src="img/vk.svg" width="35" alt="Иконка ВКонтакте"></a></li>				
 					</ul>
 					
 					<ul class="footer-menu" aria-label="меню в футере">
