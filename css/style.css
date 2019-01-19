@@ -1283,8 +1283,25 @@ a .new {
 	background-color: #f8f7f4;
 }
 
+.table-basket td:first-child {
+	width: 11px;
+}
+
+.table-basket td:nth-child(2) {
+	width: 45px;
+}
+
 .table-basket td:nth-child(3) {
+	width: 220px;
 	text-align: left;
+}
+
+.table-basket td:nth-child(4) {
+	width: 110px;
+}
+
+.table-basket td:nth-child(5) {
+	width: 77px;
 }
 
 .table-basket-price {
