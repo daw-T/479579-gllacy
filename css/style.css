@@ -6,23 +6,16 @@ body {
 	font-weight: normal;
 	color: #fff;
 	background-color: #849d8f;
+	
+	background-color: #849d8f;
+	background-image: url("../img/gllacy-catalog.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	opacity: 0.1;
 }
 
 a {
 	text-decoration: none;
-}
-
-main a {
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 500;
-	color: #323232;
-}
-
-main a:focus,
-main a:hover,
-main a:active {
-	color: #e84d37;
 }
 
 img {
@@ -48,6 +41,7 @@ a.button {
 	line-height: 24px;
 	font-weight: bold;
 	color: #fff;
+	background-color: #e74a35;
 	background-image: linear-gradient(to top, #e74a35, #f26843);
 	border: none;
 	border-radius: 20px;
@@ -59,15 +53,19 @@ a.button {
 .button:focus,
 a.button:hover,
 a.button:focus {
+	color: #fff;
 	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	background-color: #f58669;
 	box-shadow: 0 2px 2px 0 #ac1000;
 	outline: none;
 }
 
 .button:active,
 a.button:active {
+	color: #fff;
 	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-	box-shadow: box-shadow: inset 0px 2px 2px 0 #942718;
+	background-color: #e1613e;
+	box-shadow: inset 0px 2px 2px 0 #942718;
 }
 
 .site-wraper {
@@ -172,12 +170,14 @@ a.slide-button {
 	display: inline-block;
 	padding: 10px 43px 10px 41px;
 	text-align: center;
+	vertical-align: top;
 	font-size: 31px;
 	line-height: 41px;
 	font-weight: bold;
 	color: #fff;
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+	background-color: #e74a35;
 	background-image: linear-gradient(to top, #e74a35, #f26843);
 	border: none;
 	border-radius: 50px;
@@ -186,11 +186,13 @@ a.slide-button {
 
 a.slide-button:hover {
 	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	background-color: #ec6f5e;
 	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.1);
 }
 
 a.slide-button:active {
 	background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	background-color: #d84732;
 	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 1);
 }
 
@@ -274,6 +276,7 @@ a.slide-button:active {
 
 
 .basket-full {
+	position: relative;
 	min-width: 117px;
 	margin-left: 9px;
 }
@@ -508,18 +511,22 @@ li.site-navigation-catalog:hover ul.submenu-navigation {
 
 .modal-login {
 	display: none;
-	position: fixed;
-	top: 60px;
-	right: 15%;
+	position: absolute;
+	top: 42px;
+	right: 0;
 	width: 277px;
 	z-index: 2;
 }
 
+.wraper-search {
+	position: relative;
+}
+
 .modal-search {
 	display: none;
-	position: fixed;
-	top: 60px;
-	right: 22%;
+	position: absolute;
+	top: 42px;
+	right: 0;
 	width: 341px;
 	z-index: 3;
 }
@@ -548,9 +555,9 @@ li.site-navigation-catalog:hover ul.submenu-navigation {
 
 .modal-basket {
 	display: none;
-	position: fixed;
-	top: 60px;
-	right: 5%;
+	position: absolute;
+	top: 42px;
+	right: 0;
 	width: 539px;
 	border-radius: 5px;
 	z-index: 3;
@@ -618,10 +625,12 @@ li.site-navigation-catalog:hover ul.submenu-navigation {
 }
 
 .main-profitable-proposition-1 {
+	background-color: #832337;
 	background-image: url("../img/background-raspberry.jpg"); 
 }
 
 .main-profitable-proposition-2 {
+	background-color: #492818;
 	background-image: url("../img/background-chocolate.jpg"); 
 }
 
@@ -645,23 +654,26 @@ a.button-main-banner {
 	margin-left: auto;
 	padding-left: 22px;
 	padding-right: 22px;
+	background-color: #ca3824;
 	background-image: linear-gradient(to top, #ca3824, #f26843);
 	box-shadow: 0px 2px 2px 0 rgba(85, 8, 0, 0.54);
 }
 
 a.button-main-banner:hover,
 a.button-main-banner:focus {
+	background-color: #e74a35;
 	background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
 	box-shadow: 0px 1px 2px 0 #ac1000;
 }
 
 a.button-main-banner:active {
 	background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+	background-color: #f26843;
 	box-shadow: inset 0px 2px 2px 0 #942718;
 }
 
 .catalog {
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 }
 
 .catalog-list {
@@ -686,6 +698,10 @@ a.button-main-banner:active {
 	margin-right: 26px;
 }
 
+.catalog-item a {
+	z-index: 5;
+}
+
 .catalog-item:focus .catalog-item-image,
 .catalog-item:hover .catalog-item-image,
 .catalog-item:focus .catalog-item-price,
@@ -694,7 +710,7 @@ a.button-main-banner:active {
 .catalog-item:hover .catalog-item-name,
 .catalog-item:focus .hit,
 .catalog-item:hover .hit { 
-	z-index: 2;  
+	z-index: 3; 
 } 
 
 .catalog-item::after {
@@ -733,6 +749,16 @@ a.button-main-banner:active {
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
+	color: #fff;
+	cursor: pointer;
+}
+
+a .catalog-item-name,
+a .catalog-item-name:hover,
+a .catalog-item-name:focus,
+a .catalog-item-name:active {
+	font-size: 16px;
+	line-height: 22px;
 	color: #fff;
 }
 
@@ -835,6 +861,7 @@ a.button-main-banner:active {
 	margin: 0;
 	padding: 13px 0 0 20px;
 	width: 540px;
+	background-color: #fff;
 	background-image: url("../img/background-strawberry.jpg"); 
 	background-repeat: no-repeat;
 	border-radius: 15px;
@@ -914,7 +941,10 @@ a.button-main-banner:active {
 	color: #323232;
 }
 
-a .new {
+a .new,
+a .new:hover,
+a .new:focus,
+a .new:active {
 	margin: 0;
 	padding: 0 250px 0 0;
 	font-size: 24px;
@@ -1081,7 +1111,10 @@ a .new {
 	width: 162px;
 }
 
-.footer-menu a {
+.footer-menu a,
+.footer-menu:hover a,
+.footer-menu:focus a,
+.footer-menu:active a {
 	display: block;
 	padding-top: 0;
 	color: #fff;
@@ -1360,10 +1393,18 @@ ul.breadcrumbs {
 	position: relative;
 }
 
+.breadcrumbs:hover a,
+.breadcrumbs:focus a,
+.breadcrumbs:active a  {
+	font-size: 14px;
+	line-height: 16px;	
+	color: #fff;
+}
+
 .breadcrumbs a::after  {
 	content: "»";
-position: absolute;	
-right: 7px;
+	position: absolute;	
+	right: 7px;
 
 }
 
@@ -1378,14 +1419,13 @@ right: 7px;
 	display: flex;
 	justify-content: flex-end;
 	margin: 0;
-	margin-bottom: 44px;
+	margin-bottom: 25px;
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
 }
 	
-.pagination-page a,
-.pagination-page-curren a {
+.pagination-page a {
 	display: block;
 	min-width: 19px;
 	padding: 5px;
@@ -1396,6 +1436,30 @@ right: 7px;
 	color: #fff;
 }
 
+.pagination-page:hover a,
+.pagination-page:focus a {
+	color: #fff;	
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+}
+
+.pagination-page:active a {
+	color: #323232;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.pagination-page-curren a,
+.pagination-page-curren:hover a,
+.pagination-page-curren:active a {
+	color: #323232;
+	background-color: #fff;	
+	border-radius: 50%;
+}
+
+.disabled {
+    opacity: 0.2;
+}
 
 .pagination-prev-page a{
 	width: 25px;
@@ -1409,15 +1473,13 @@ right: 7px;
 	text-align: right;
 }
 
-.disabled {
-    opacity: 0.2;
-}
-
-.pagination-page-curren a,
-.pagination-page-curren:active a {
-	color: #323232;
-	background-color: #fff;	
-	border-radius: 50%;
+.pagination-prev-page:hover a,
+.pagination-prev-page:focus a,
+.pagination-next-page:hover a,
+.pagination-next-page:focus a,
+.pagination-prev-page:active a,
+.pagination-prev-page:active a {
+	background-color: transparent;	
 }
 
 

@@ -12,7 +12,7 @@
 					<header class="main-header">
 						<div class="first-line-menu">
 							<nav class="main-navigation" aria-label="Главное меню">
-								<a class="main-header-logo">
+								<a class="main-header-logo" href="../index.html">
 									<img src="../img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Gllacy Shop">
 								</a>	
 								<ul class="site-navigation" aria-label="Разделы главного меню">
@@ -79,6 +79,39 @@
 							<div>
 								<a href="#">2 товара</a>
 							</div>
+						<section class="modal modal-basket">
+			<h2 class="visually-hidden">Корзина с товарами</h2>
+			<form class="user-basket" action="https://echo.htmlacademy.ru" method="post">
+				<table class="table-basket">
+					<tr>
+						<td>
+							<button class="item-del" type="button" aria-label="Удаление товара из корзины">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+							</button>
+						</td>
+						<td><img src="../img/product-13.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+						<td>Пломбир с апельсиновым джемом</td>
+						<td>1,5кг х <span class="table-basket-price">200 руб.</span></td>
+						<td>300 руб.</td>				
+					</tr>
+					<tr>
+						<td>
+							<button class="item-del" type="button" aria-label="Удаление товара из корзины">
+								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
+							</button>
+						</td>
+						<td><img src="../img/product-14.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+						<td>1,5кг х <span class="table-basket-price">300 руб.</span></td>
+						<td>450 руб.</td>				
+					</tr>			
+				</table>
+				<hr class="user-basket-hr">
+				<p class="user-basket-total">Итого: <span class="user-basket-sum">750 руб.</span></p>
+				<button class="button button-basket" type="submit">Оформить заказ</button>
+			</form>
+			<button class="modal-close modal-basket-close" type="button" aria-label="Выход из формы">Закрыть</button>
+		</section>		
 						</div>
 					</div>	
 				</div>
@@ -265,7 +298,10 @@
 		   
 				<nav aria-label="Навигация по страницам">
 					<ul class="pagination-list">
-						<li class="pagination-page pagination-prev-page disabled"><a href="#" aria-label="Предыдущая страница"><img src="../img/icon-right-small.svg" width="8" height="12" alt="Стрелка влево"></a>
+						<li class="pagination-page pagination-prev-page disabled"><a aria-label="Предыдущая страница">
+							<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+								<path fill="#fff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/>
+							</svg>
 						<li class="pagination-page pagination-page-curren"><a>1</a>
 						<li class="pagination-page"><a href="#">2</a>
 						<li class="pagination-page"><a href="#">3</a>
@@ -299,39 +335,7 @@
 			</div>
 		</footer>
 
-		<section class="modal modal-basket">
-			<h2 class="visually-hidden">Корзина с товарами</h2>
-			<form class="user-basket" action="https://echo.htmlacademy.ru" method="post">
-				<table class="table-basket">
-					<tr>
-						<td>
-							<button class="item-del" type="button" aria-label="Удаление товара из корзины">
-								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-							</button>
-						</td>
-						<td><img src="../img/product-13.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-						<td>Пломбир с апельсиновым джемом</td>
-						<td>1,5кг х <span class="table-basket-price">200 руб.</span></td>
-						<td>300 руб.</td>				
-					</tr>
-					<tr>
-						<td>
-							<button class="item-del" type="button" aria-label="Удаление товара из корзины">
-								<svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11"><path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/></svg>
-							</button>
-						</td>
-						<td><img src="../img/product-14.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-						<td>1,5кг х <span class="table-basket-price">300 руб.</span></td>
-						<td>450 руб.</td>				
-					</tr>			
-				</table>
-				<hr class="user-basket-hr">
-				<p class="user-basket-total">Итого: <span class="user-basket-sum">750 руб.</span></p>
-				<button class="button button-basket" type="submit">Оформить заказ</button>
-			</form>
-			<button class="modal-close modal-basket-close" type="button" aria-label="Выход из формы">Закрыть</button>
-		</section>	
+		
 		<div class="overlay"></div>
 		<script src="../js/scripts.js"></script>
     </body>

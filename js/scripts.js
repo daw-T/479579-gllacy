@@ -10,8 +10,7 @@ var overlay = document.querySelector(".overlay");
 var isStorage = true;
 var storage =""
 
-loginLink.addEventListener("click", function (evt) {
-	console.log("click login");
+loginLink.addEventListener("mouseover", function (evt) {
 	evt.preventDefault();
 	loginPopup.classList.add("modal-show");
 	overlay.classList.add("modal-show");
@@ -22,7 +21,6 @@ loginLink.addEventListener("click", function (evt) {
 });
 
 loginClose.addEventListener("click", function (evt) {
-	console.log("click login close");
 	evt.preventDefault();
 	loginPopup.classList.remove("modal-show");
 	overlay.classList.remove("modal-show");
@@ -47,15 +45,13 @@ var searchLink = document.querySelector(".search");
 var searchPopup = document.querySelector(".modal-search");
 var searchClose = searchPopup.querySelector(".modal-close");
 
-searchLink.addEventListener("click", function (evt) {
-	console.log("click search");
+searchLink.addEventListener("mouseover", function (evt) {
 	evt.preventDefault();
 	searchPopup.classList.add("modal-show");
 	overlay.classList.add("modal-show");
 });
 
 searchClose.addEventListener("click", function (evt) {
-	console.log("click search close");
 	evt.preventDefault();
 	searchPopup.classList.remove("modal-show");
 	overlay.classList.remove("modal-show");
@@ -67,13 +63,11 @@ if (mapPopup !== null){
 	var mapClose = mapPopup.querySelector(".modal-close");
 	
 	mapLink.addEventListener("click", function (evt) {
-		console.log("click map");
 		evt.preventDefault();
 		mapPopup.classList.add("modal-show");
 	});
 
 	mapClose.addEventListener("click", function (evt) {
-		console.log("click map close");
 		evt.preventDefault();
 		mapPopup.classList.remove("modal-show");
 	});	
@@ -84,15 +78,13 @@ var feedbackPopup = document.querySelector(".modal-feedback");
 if (feedbackPopup !== null){
 	var feedbackClose = feedbackPopup.querySelector(".modal-feedback-close");
 
-	feedbackLink.addEventListener("click", function (evt) {
-		console.log("click feedback");
+	feedbackLink.addEventListener("mouseover", function (evt) {
 		evt.preventDefault();
 		feedbackPopup.classList.add("modal-show");
 		overlay.classList.add("modal-show");
 	});
 
 	feedbackClose.addEventListener("click", function (evt) {
-		console.log("click feedback close");
 		evt.preventDefault();
 		feedbackPopup.classList.remove("modal-show");
 		overlay.classList.remove("modal-show");
@@ -104,15 +96,13 @@ var basketPopup = document.querySelector(".modal-basket");
 if (basketPopup !== null){
 	var basketClose = basketPopup.querySelector(".modal-basket-close");
 
-	basketLink.addEventListener("click", function (evt) {
-		console.log("click basket");
+	basketLink.addEventListener("mouseover", function (evt) {
 		evt.preventDefault();
 		basketPopup.classList.add("modal-show");
 		overlay.classList.add("modal-show");
 	});
 
 	basketClose.addEventListener("click", function (evt) {
-		console.log("click basket close");
 		evt.preventDefault();
 		basketPopup.classList.remove("modal-show");
 		overlay.classList.remove("modal-show");
