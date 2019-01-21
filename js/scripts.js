@@ -24,19 +24,23 @@ loginClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	loginPopup.classList.remove("modal-show");
 	overlay.classList.remove("modal-show");
+	popup.classList.remove("modal-error");
 });	
 
 loginForm.addEventListener("submit", function (evt) {
-	if (!mail.value || !password.value){
+	evt.preventDefault();
+	if (!inputMail.value || !password.value){
 		evt.preventDefault();
+		console.log(inputMail);
 		console.log("Нужно ввести адрес почты и пароль");
+		popup.classList.add("modal-error");
 	} else {
-		localStorage.setItem ("login", login.value);
+		localStorage.setItem ("mail", inputMail.value);
 	}
 });	
 
 try {
-	storage = localStorage.getItem("login");
+	storage = localStorage.getItem("mail");
 } catch (err) {
 	isStorageSupport = false
 }
@@ -78,7 +82,7 @@ var feedbackPopup = document.querySelector(".modal-feedback");
 if (feedbackPopup !== null){
 	var feedbackClose = feedbackPopup.querySelector(".modal-feedback-close");
 
-	feedbackLink.addEventListener("mouseover", function (evt) {
+	feedbackLink.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		feedbackPopup.classList.add("modal-show");
 		overlay.classList.add("modal-show");
@@ -115,6 +119,7 @@ window.addEventListener("keydown", function (evt) {
 		
 		if (loginPopup.classList.contains("modal-show")) {
 			loginPopup.classList.remove("modal-show");
+			popup.classList.remove("modal-error");
 		}
 		if (searchPopup.classList.contains("modal-show")) {
 			searchPopup.classList.remove("modal-show");
@@ -138,29 +143,3 @@ window.addEventListener("keydown", function (evt) {
 		overlay.classList.remove("modal-show");
 	}
 });	
-	
-
-/*window.addEventListener("keydown", function (evt) {
-	if (evt.keyCode === 27) {
-		evt.preventDefault();
-		if (loginPopup.classList.contains("modal-show")) {
-			loginPopup.classList.remove("modal-show");
-		}
-		if (searchPopup.classList.contains("modal-show")) {
-			searchPopup.classList.remove("modal-show");
-		}
-		if (mapPopup.classList.contains("modal-show")) {
-			mapPopup.classList.remove("modal-show");
-		}
-		
-		if (feedbackPopup.classList.contains("modal-show")) {
-			feedbackPopup.classList.remove("modal-show");
-		}
-		
-		if (basketPopup.classList.contains("modal-show")) {
-			basketPopup.classList.remove("modal-show");
-		}
-		overlay.classList.remove("modal-show")
-	}
-});	*/
-
